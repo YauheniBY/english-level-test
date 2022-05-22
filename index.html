@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English LEVEL TEST (Quiz)</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,Cyrillic" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="./css/style_quiz.css" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="quiz" id="quiz">
+            <div class="quiz__name">English level <span class="quiz__name_rose">test</span></div>  
+            <div class="quiz__progres" id="indicator">1/2</div>
+            <div class="quiz__questions-item" id="questions">                
+            </div>
+            <div class="quiz__result-item" id="results">
+            </div>
+            <button class="quiz__btn-next" id="btnNext" disabled ><span class="quiz__btn-next-span"> Далее</span></button>
+            <button class="quiz__btn-restart" id="btnRestart"><span class="quiz__btn-restart-span"> Пройти тест заново</span></button>
+            <div class="quiz__test-info"><span class="quiz__test-info-signal"></span> Правила прохождения теста
+                <ul class="quiz__test-ruls">
+                    <li class="quiz__test-rul">В тесте 50 вопросов.</li>
+                    <li class="quiz__test-rul">В каждом вопросе теста разрешено выбирать только один ответ.</li>
+                    <li class="quiz__test-rul">Время на выполнение 15 - 30 минут.</li>
+                    <li class="quiz__test-rul">Тестирование направлено на поверку уровня знаний лексики и грамматики английского языка от Beginner до Upper-Intermediate.</li>
+                    <button class="quiz__test-rul-btn">Ok</button>
+                </ul>
+
+            </div>
+        </section>
+    </div>
+    <script type="module" src="./js/quiz.js"></script>
+</body>
+</html>
