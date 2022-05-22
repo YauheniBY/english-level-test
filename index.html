@@ -10,14 +10,12 @@
     <link rel="stylesheet" href="./css/style_quiz.css" type="text/css">
 </head>
 <body>
-    <div class="wrapper">
+    <main class="wrapper">
         <section class="quiz" id="quiz">
             <div class="quiz__name">English level <span class="quiz__name_rose">test</span></div>  
             <div class="quiz__progres" id="indicator">1/2</div>
-            <div class="quiz__questions-item" id="questions">                
-            </div>
-            <div class="quiz__result-item" id="results">
-            </div>
+            <div class="quiz__questions-item" id="questions"></div>
+            <div class="quiz__result-item" id="results"></div>
             <button class="quiz__btn-next" id="btnNext" disabled ><span class="quiz__btn-next-span"> Далее</span></button>
             <button class="quiz__btn-restart" id="btnRestart"><span class="quiz__btn-restart-span"> Пройти тест заново</span></button>
             <div class="quiz__test-info"><span class="quiz__test-info-signal"></span> Правила прохождения теста
@@ -28,10 +26,9 @@
                     <li class="quiz__test-rul">Тестирование направлено на поверку уровня знаний лексики и грамматики английского языка от Beginner до Upper-Intermediate.</li>
                     <button class="quiz__test-rul-btn">Ok</button>
                 </ul>
-
             </div>
         </section>
-    </div>
+    </main>
     <script type="module" src="./js/quiz.js"></script>
 </body>
 </html>

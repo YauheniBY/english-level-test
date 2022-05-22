@@ -63,6 +63,9 @@ body {
   font-size: 22px;
   line-height: 33px;
   font-weight: 300;
+}
+
+main {
   min-height: 100vh;
   width: 100%;
   color: #424F60;
@@ -73,19 +76,19 @@ body {
 }
 
 @media (max-width: 1000px) {
-  body {
+  main {
     background-position-x: -280px;
   }
 }
 
 @media (max-width: 769px) {
-  body {
+  main {
     background-position-x: -310px;
   }
 }
 
 @media (max-width: 521px) {
-  body {
+  main {
     font-size: 20px;
     line-height: 31px;
     background-position-x: -330px;
@@ -133,6 +136,7 @@ body {
 @media (max-width: 521px) {
   .quiz__name {
     font-size: 30px;
+    padding-top: 0px;
   }
 }
 
@@ -232,7 +236,6 @@ body {
 
 .quiz__answer-input:checked + .quiz__answer-label-span::after {
   opacity: 1;
-  z-index: 9;
 }
 
 .quiz__result-item {
