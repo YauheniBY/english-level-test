@@ -117,6 +117,7 @@
             questions.classList.add('quiz__questions-item_invisible');
             results.classList.add('quiz__result-item_visible');
             idicator.innerHTML = `Вы ответили на все вопросы!`;
+            idicator.classList.add('quiz__progres_final');
             rendorResults ();
 
         } else if (event.target.classList.contains('quiz__btn-restart-span')) {
@@ -124,6 +125,7 @@
             results.classList.remove('quiz__result-item_visible');
             btnRestart.classList.remove('quiz__btn-restart_visible');
             btnNext.classList.remove('quiz__btn-next_invisible');
+            idicator.classList.remove('quiz__progres_final');
             localResults = {};
             rendorQuetions (0);
             

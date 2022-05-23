@@ -28,3 +28,11 @@
         @content;
     }
 }
+
+@mixin landscape {
+    @media only screen 
+and (max-width: $desktop-width) 
+and (orientation : landscape){
+    @content;
+}
+}

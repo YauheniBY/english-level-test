@@ -95,6 +95,13 @@ main {
   }
 }
 
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  main {
+    background-position-x: -200px;
+    background-size: cover;
+  }
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
@@ -116,12 +123,24 @@ main {
   padding-top: 50px;
 }
 
+@media (max-width: 521px) {
+  .quiz {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  .quiz {
+    height: 100%;
+  }
+}
+
 .quiz__name {
   display: block;
   margin: 30px auto 0 auto;
   width: 100%;
   text-align: center;
-  padding: 30px 0px;
+  padding: 50px 0px;
   color: #B8C3FF;
   font-size: 50px;
   font-weight: bold;
@@ -136,7 +155,9 @@ main {
 @media (max-width: 521px) {
   .quiz__name {
     font-size: 30px;
-    padding-top: 0px;
+    margin-top: 0;
+    margin: 10px auto 15px auto;
+    padding-bottom: 15px;
   }
 }
 
@@ -259,6 +280,12 @@ main {
   opacity: 1;
 }
 
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+  .quiz__btn-next, .quiz__btn-restart {
+    margin-bottom: 50px;
+  }
+}
+
 .quiz__btn-next-span, .quiz__btn-restart-span {
   padding: 10px 35px;
   display: block;
@@ -307,15 +334,38 @@ main {
 .quiz__progres {
   display: inline-block;
   text-align: center;
-  color: #F7F5FB;
+  color: #fff;
   font-size: 15px;
-  background-color: #424F60;
+  background-color: rgba(0, 0, 0, 0.592);
   padding: 5px 15px;
   margin: 30px auto 20px auto;
   border-radius: 10px;
-  border: 2px solid #F7F5FB;
-  box-shadow: 0px 0px 3px #e0e5f12e;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 3px #a6acbadb;
   opacity: 0.8;
+}
+
+@media (max-width: 521px) {
+  .quiz__progres {
+    margin: 10px auto 20px auto;
+    margin-top: 0;
+  }
+}
+
+.quiz__progres_final {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: none;
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+@media (max-width: 521px) {
+  .quiz__progres_final {
+    font-size: 20px;
+  }
 }
 
 .quiz__progres_invisible {
@@ -332,6 +382,15 @@ main {
   bottom: 0;
   display: inline-block;
   right: 0;
+}
+
+@media (max-width: 521px) {
+  .quiz__test-info {
+    bottom: 100%;
+    top: 0;
+    padding: 10px;
+    left: 0;
+  }
 }
 
 .quiz__test-info-signal::before {
@@ -372,6 +431,12 @@ main {
   font-weight: bold;
   font-style: normal;
   opacity: 1;
+}
+
+@media (max-width: 521px) {
+  .quiz__test-info_active {
+    padding-top: 20px;
+  }
 }
 
 .quiz__test-info_active .quiz__test-info-signal::before {

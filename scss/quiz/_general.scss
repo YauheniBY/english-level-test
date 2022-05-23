@@ -23,11 +23,15 @@ main {
         background-position-x: -310px;
     }
 
-
     @include mobile {
         font-size: 20px;
         line-height: 31px;
         background-position-x: -330px;
+    }
+
+    @include landscape {
+        background-position-x: -200px;
+        background-size: cover; 
     }
 
 }
