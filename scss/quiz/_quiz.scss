@@ -167,6 +167,7 @@
 
     &__btn-next:disabled {
         opacity: 0;
+        display: none;
     }
 
     &__btn-next-span:hover, &__btn-restart-span:hover {
